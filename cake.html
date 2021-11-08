@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script type="text/javascript">
+function chgimg(x,y)
+{
+i1.src=x;
+popper.src=y;
+window.setTimeout("document.getElementById('popper').style.display='none';", 3500);
+}
+
+</script>
+<style>
+body {
+  background-image: url('bg.jpg');
+  background-size:cover;
+}
+</style>
+<head>
+<body>
+<center>
+<marquee scrollamount=12>
+<h2 class="heading-text">TCS Welcomes Ahold Leadership for celebrating one year completion of SAP AMS</h2>
+</marquee>
+
+<img id="popper" src="">
+<img id="i1" src="MAIN.png" width="650" height="580" /><br>
+<b><b><br><br>
+<div class="btn-section">
+<input type="button" class="btn" value="Person1" onclick="chgimg('CA1.png','gif1.gif')" />
+<input type="button" class="btn" value="Person2" onclick="chgimg('CA2.png','gif1.gif')"/>
+<input type="button" class="btn" value="Person3" onclick="chgimg('CA3.png','gif1.gif')"/>
+<input type="reset" class="btn" value="Reset" onclick="chgimg('MAIN.png')"/>
+
+
+</div>
+</center>
+
+
+</body>
+</html>
